@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hospital San Buenaventura</title>
+  <!-- Página construida únicamente con HTML (sin CSS ni JavaScript externos) -->
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <h1>Hospital San Buenaventura</h1>
+    <p>Atención integral las 24 horas · Calidad en salud para toda la familia</p>
+    <!-- Logo simple en SVG embebido (sigue siendo HTML válido) -->
+    <figure aria-label="Logotipo del Hospital">
+      <svg width="80" height="80" viewBox="0 0 100 100" role="img" aria-labelledby="logoTitle">
+        <title id="logoTitle">Cruz médica</title>
+        <rect x="10" y="10" width="80" height="80" rx="10" fill="#ffffff" stroke="#000000" />
+        <rect x="42" y="20" width="16" height="60" fill="#000000" />
+        <rect x="20" y="42" width="60" height="16" fill="#000000" />
+      </svg>
+    </figure>
+  </header>
+
+  <!-- NAVEGACIÓN -->
+  <nav aria-label="Menú principal">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#especialidades">Especialidades</a></li>
+      <li><a href="#medicos">Equipo médico</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- Sección Inicio -->
+    <section id="inicio">
+      <h2>Bienvenida</h2>
+      <p>El Hospital San Buenaventura ofrece servicios integrales en medicina general, emergencias y especialidades.</p>
+      <p>Horario de atención: <strong>24 horas</strong> · Urgencias abiertas todos los días.</p>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios">
+      <h2>Servicios principales</h2>
+      <ul>
+        <li>Atención de urgencias 24/7</li>
+        <li>Consultas externas</li>
+        <li>Hospitalización</li>
+        <li>Cirugía general y especializada</li>
+        <li>Laboratorio clínico</li>
+        <li>Imagenología (radiografía, ecografía)</li>
+        <li>Farmacia</li>
+        <li>Rehabilitación y fisioterapia</li>
+      </ul>
+    </section>
+
+    <!-- Sección Especialidades -->
+    <section id="especialidades">
+      <h2>Especialidades médicas</h2>
+      <table border="1" summary="Tabla de especialidades y horarios de consulta">
+        <caption>Especialidades y horario de consultas</caption>
+        <thead>
+          <tr>
+            <th>Especialidad</th>
+            <th>Médico</th>
+            <th>Días</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Medicina General</td>
+            <td>Dr. Juan Pérez</td>
+            <td>Lun - Vie</td>
+            <td>08:00 - 16:00</td>
+          </tr>
+          <tr>
+            <td>Pediatría</td>
+            <td>Dra. María López</td>
+            <td>Lun - Vie</td>
+            <td>09:00 - 15:00</td>
+          </tr>
+          <tr>
+            <td>Ginecología</td>
+            <td>Dra. Ana Torres</td>
+            <td>Mar, Jue</td>
+            <td>10:00 - 17:00</td>
+          </tr>
+          <tr>
+            <td>Cardiología</td>
+            <td>Dr. Carlos Gómez</td>
+            <td>Mié, Vie</td>
+            <td>11:00 - 18:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sección Equipo médico -->
+    <section id="medicos">
+      <h2>Equipo médico</h2>
+      <article>
+        <h3>Dr. Juan Pérez</h3>
+        <p>Medicina General · Resolución profesional #12345 · Experiencia en atención primaria y emergencias.</p>
+      </article>
+      <article>
+        <h3>Dra. María López</h3>
+        <p>Pediatría · Resolución profesional #23456 · Especialista en crecimiento y desarrollo infantil.</p>
+      </article>
+      <article>
+        <h3>Dra. Ana Torres</h3>
+        <p>Ginecología y Obstetricia · Resolución profesional #34567 · Atención prenatal y control de embarazo.</p>
+      </article>
+    </section>
+
+    <!-- Sección Urgencias (destacada) -->
+    <section id="urgencias">
+      <h2>Urgencias</h2>
+      <p>En caso de emergencia: llame inmediatamente al <strong>+593 9 1234 5678</strong> o acuda a la entrada principal.</p>
+      <p>Servicios disponibles: reanimación, atención traumato-ortopédica, suturas, control de hemorragias, soporte vital básico y avanzado.</p>
+    </section>
+
+    <!-- Sección Contacto con formulario -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Teléfono: <strong>+593 2 2345 678</strong></p>
+      <p>Correo: <a href="mailto:info@hospitalsanbuenaventura.ec">info@hospitalsanbuenaventura.ec</a></p>
+
+      <h3>Enviar consulta (formulario)</h3>
+      <!-- El formulario usa action="#" porque es solo HTML estático; si lo integras, reemplaza action por la URL del servidor -->
+      <form action="#" method="post" aria-label="Formulario de contacto">
+        <p>
+          <label for="nombre">Nombre completo:</label><br />
+          <input type="text" id="nombre" name="nombre" required />
+        </p>
+        <p>
+          <label for="email">Correo electrónico:</label><br />
+          <input type="email" id="email" name="email" required />
+        </p>
+        <p>
+          <label for="telefono">Teléfono:</label><br />
+          <input type="tel" id="telefono" name="telefono" />
+        </p>
+        <p>
+          <label for="mensaje">Mensaje:</label><br />
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </p>
+        <p>
+          <button type="submit">Enviar consulta</button>
+          <button type="reset">Limpiar</button>
+        </p>
+      </form>
+    </section>
+
+    <!-- Sección Ubicación -->
+    <section id="ubicacion">
+      <h2>Ubicación</h2>
+      <p>Calle Principal 123, Centro — Ciudad Ejemplo</p>
+      <p>Referencias: Frente al parque central, a 2 cuadras de la estación de buses.</p>
+
+      <h3>Cómo llegar</h3>
+      <ol>
+        <li>En transporte público baje en la parada "Parque Central".</li>
+        <li>Camine hacia la Av. Principal y gire a la derecha.</li>
+        <li>El hospital está en la esquina, edificio blanco con rótulo azul.</li>
+      </ol>
+    </section>
+
+    <!-- Sección Preguntas frecuentes -->
+    <section id="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Atiende el hospital por emergencias pediátricas?</summary>
+        <p>Sí, contamos con atención pediátrica en urgencias las 24 horas.</p>
+      </details>
+      <details>
+        <summary>¿Cómo solicito una cita con especialista?</summary>
+        <p>Puedes solicitarla llamando al número del hospital o llenando el formulario de contacto.</p>
+      </details>
+    </section>
+  </main>
+
+  <!-- BARRA LATERAL / INFORMACIÓN ADICIONAL -->
+  <aside aria-label="Información adicional">
+    <h2>Información administrativa</h2>
+    <p>Horario de atención administrativa: Lun - Vie 08:00 - 17:00</p>
+    <h3>Seguros</h3>
+    <ul>
+      <li>Seguro A (convenio)</li>
+      <li>Seguro B (convenio)</li>
+      <li>Pago particular</li>
+    </ul>
+  </aside>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 Hospital San Buenaventura. Todos los derechos reservados.</p>
+    <p>Política de privacidad · Términos y condiciones</p>
+  </footer>
+</body>
+</html>
